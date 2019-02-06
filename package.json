@@ -1,0 +1,21 @@
+{
+    "name": "etoken_erc20",
+    "description": "it implements a real estate management",
+    "main": "truffle.js",
+    "homepage": "https//:github.com/grandmullah",
+    "author": {
+        "email": "collinsbiegon9@gmail.com"
+    },
+    "directories": {
+        "test": "test",
+        "contracts": "contracts"
+    },
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "license": "ISC",
+    "repository": "github:grandmullah/ERC-20-TOKEN-SMART-CONTRACTS",
+    "devDependencies": {
+        "lite-server": "^2.4.0"
+    }
+}

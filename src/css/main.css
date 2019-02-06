@@ -1,0 +1,86 @@
+h2{
+text-align: center;
+font-size: 200%;
+padding: 0.5%;
+background-color: rgb(98, 98, 223);
+margin: 0.1%;
+}
+hr{
+margin-bottom: 10%px;
+}
+div.co{
+width: 50%;
+height: 610px;
+margin:50px auto;
+font-family: 'Droid Serif', serif;
+position:relative;
+}
+div.main{
+width: 75%;
+float:left;
+padding: 10px 55px 40px;
+background-color:rgb(221, 178, 182);
+border: 15px solid white;
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+}
+input[type=text],[type=password] {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #00F5FF;
+border: 2px solid #00F5FF;
+color: #4f4f4f;
+font-size: 16px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 17px;
+font-weight: bold;
+}
+#register,
+#login,
+#register1,
+#register2,
+#register3,
+#register4 {
+font-size: 20px;
+margin-top: 15px;
+background: linear-gradient(#22abe9 5%, #36caf0 100%);
+border: 1px solid #0F799E;
+padding: 7px 35px;
+color: white;
+text-shadow: 0px 1px 0px #13506D;
+font-weight: bold;
+border-radius: 2px;
+cursor: pointer;
+width: 100%;
+}
+#register:hover,{
+background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+#header ,body{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+h3{
+    text-decoration-style: solid;
+    font: bold;
+    font-style: normal;
+    text-align: center;
+    padding: 0.4%;
+    background-color: grey;
+}
+.container{
+    border: #00F5FF;
+    border-style: solid;
+    border-color: blue;
+
+}
+#profile {
+    border-color: black;
+}
