@@ -34,7 +34,7 @@ App = {
               App.contracts.Houses.deployed().then(function(instance){
                 console.log(instance.address);
               });
-            
+            });
         }).done(function(){
             $.getJSON("interface.json", 
                 function (interface) {
@@ -42,7 +42,7 @@ App = {
                    App.contracts.Interface.setProvider(App.web3Provider);
                    return App.Render();
                 });
-        });
+        
         });
     },
     Render:function(){
