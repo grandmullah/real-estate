@@ -34,18 +34,15 @@ App = {
               App.contracts.Houses.deployed().then(function(instance){
                 console.log(instance.address);
               });
-            
+            });
         }).done(function(){
             $.getJSON("interface.json", 
                 function (interface) {
                    App.contracts.Interface = TruffleContract(interface);
                    App.contracts.Interface.setProvider(App.web3Provider);
-                   App.contracts.Interface.deployed().then(function(instance){
-                   console.log(instance.address);
-                    return App.Render();
-                  });
+                   return App.Render();
                 });
-        });
+        
         });
     },
     Render:function(){
