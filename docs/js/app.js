@@ -36,7 +36,7 @@ App = {
               });
              });
         }).done(function(){
-            $.getJSON("interface.json", 
+            $.getJSON("Interface.json", 
                 function (interface) {
                    App.contracts.Interface = TruffleContract(interface);
                    App.contracts.Interface.setProvider(App.web3Provider);
