@@ -1,15 +1,53 @@
 
-var EToken = artifacts.require("EToken");
 
-contract ("EToken", function(accounts){
-   var Instance ; 
- it("sets state variables ",function(){
-    return EToken.deployed().then(function(instance){
-        Instance = instance;
-      return Instance.name(); 
-    }).then(function(name){
-        assert.equal(name ,"EToken","etoken has correct name");
-      return Instance.symbol();  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }).then(function(symbol){
         assert.equal(symbol,"ETk","sets token symbol to ETk");
      

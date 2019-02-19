@@ -2,15 +2,15 @@ pragma solidity ^0.5.0;
 import './EToken.sol';
 import './Houses.sol';
 
+
 contract Interface {
 
     address[] public registeredUsers;
     Houses public HouseContract;
     EToken public EtokenContract;
     uint256 public roomPrice;
-    address owner;
+    address public owner;
     
-
     struct User {
         string name;
         string email;
@@ -33,7 +33,6 @@ contract Interface {
         registed.push(msg.sender);
         require(!user.registered); 
         require(msg.sender == _user);
-
         user.password = _password;
         user.name = _name;
         user.email = _email;
