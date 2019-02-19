@@ -34,7 +34,7 @@ App = {
               App.contracts.Houses.deployed().then(function(instance){
                 console.log(instance.address);
               });
-             });
+            
         }).done(function(){
             $.getJSON("Interface.json", 
                 function (interface) {
@@ -46,7 +46,7 @@ App = {
                    });
                   
                 });
-       
+        });
         });
     },
     Render:function(){
