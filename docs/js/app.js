@@ -40,7 +40,11 @@ App = {
                 function (interface) {
                    App.contracts.Interface = TruffleContract(interface);
                    App.contracts.Interface.setProvider(App.web3Provider);
-                   return App.Render();
+                   App.contracts.Interface.deployed().then(function (instance) {
+                       console.log(instance.address);
+                        return App.Render();
+                   });
+                  
                 });
        
         });
