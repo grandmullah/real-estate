@@ -97,12 +97,13 @@ App = {
             // }
         });
         App.contracts.Houses.deployed().then(function (instance) {
-            Instance =instance;
+            Instance = instance;
             return Instance.registeredhouses();
         }).then(function (house) {
             for(var p= 0;p<house.length;p++){
                 var k = house[p];
                 console.log(house[p]);
+                
                 return Instance.registeredhousesRooms(k);
             }
         }).then(function(rooms){
