@@ -100,9 +100,10 @@ App = {
             //     console.log(houses[1]);
             // }
         });
+        var Instance;
         App.contracts.Houses.deployed().then(function (instance) {
             Instance = instance;
-            return Instance.registeredhouses();
+            return instance.registeredhouses();
         }).then(function (house) {
             for(var p= 0;p<house.length;p++){
                 var k = house[p];
@@ -114,6 +115,7 @@ App = {
             for (var i = 0; i < rooms.length; i++) {
                 $("#displayrooms").append(rooms[i] + "<br>");
           }
+        
         });
 
 
