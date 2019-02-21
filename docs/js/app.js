@@ -101,7 +101,7 @@ App = {
             // }
         });
         App.contracts.Houses.deployed().then(function (instance) {
-            Instance =instance;
+            Instance = instance;
             return Instance.registeredhouses();
         }).then(function (house) {
             for(var p= 0;p<house.length;p++){
@@ -130,7 +130,7 @@ App = {
        
         var issaaddress = web3.isAddress(Ethadd);
         if (!Name.match(namereg)) {
-            $("#name").closest(".form-control").addClass("has-error");
+          //  $("#name").closest(".form-control").addClass("has-error");
             $("#name").effect("shake");
         }else if(!issaaddress) {
             $("#ethadd").effect("shake");
@@ -140,12 +140,12 @@ App = {
             $("#cpassword").effect("shake");
         }else {
         App.contracts.Interface.deployed().then(function(instance){
-            Instance = instance;
-            return Instance.register(Ethadd, Password, Email, Name, {
+            return instance.register(Ethadd, Password, Email, Name, {
                 from: App.accounts,
                 gas: 500000
             });
         }).then(function(receipts){
+            console.log(receipts);
             alert("successfully registered you can login in now");
             $("#userregistration").modal('hide');
             $("#userlogin").modal({
