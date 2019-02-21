@@ -67,6 +67,7 @@ App = {
         App.contracts.Interface.deployed().then(function(instance){
             return instance.Users(App.accounts);
         }).then(function(user){
+            console.log(user);
             $("#semail").html(user[1] );
             $("#sname").html(user[0]);
             $("#accadd").html(App.accounts);

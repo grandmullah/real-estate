@@ -103,7 +103,6 @@ App = {
             for(var p= 0;p<house.length;p++){
                 var k = house[p];
                 console.log(house[p]);
-                
                 return Instance.registeredhousesRooms(k);
             }
         }).then(function(rooms){
