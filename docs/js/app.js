@@ -65,7 +65,7 @@ App = {
 
         });
         App.contracts.Interface.deployed().then(function(instance){
-            return instance.userdetails(App.accounts);
+            return instance.userdetails.call(App.accounts);
         }).then(function(user){
             console.log(user);
             // $("#semail").html(user[1] );
@@ -73,7 +73,7 @@ App = {
             $("#accadd").html(App.accounts);
         });
         App.contracts.Interface.deployed().then(function(instance) {
-            return instance.usersdipslay();
+            return instance.usersdipslay.call();
           }).then(function(users) {
          
               for (var i = 0; i < users.length;i++ ){
@@ -140,7 +140,6 @@ App = {
             $("#cpassword").effect("shake");
         }else {
         App.contracts.Interface.deployed().then(function(instance){
-            console.log(Name);
             return instance.register(Ethadd, Password, Email, Name, {
                 from: App.accounts,
                 gas: 500000
