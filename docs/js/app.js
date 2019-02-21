@@ -68,8 +68,8 @@ App = {
             return instance.userdetails(App.accounts);
         }).then(function(user){
             console.log(user);
-            $("#semail").html(user[1] );
-            $("#sname").html(user[0]);
+            // $("#semail").html(user[1] );
+            // $("#sname").html(user[0]);
             $("#accadd").html(App.accounts);
         });
         App.contracts.Interface.deployed().then(function(instance) {
@@ -140,6 +140,7 @@ App = {
             $("#cpassword").effect("shake");
         }else {
         App.contracts.Interface.deployed().then(function(instance){
+            console.log(Name);
             return instance.register(Ethadd, Password, Email, Name, {
                 from: App.accounts,
                 gas: 500000
