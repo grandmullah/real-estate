@@ -119,9 +119,9 @@ App = {
 
     },
     Registration: function(){
-        var Name = $("#name").val();
+        var Name = $("#nameuser").val();
         var Ethadd = $("#ethadd").val();
-        var Email = $("#email").val();
+        var Email = $("#emailuser").val();
         var Password = $("#password").val();
         var cpassword = $("#cpassword").val();
 
