@@ -57,4 +57,8 @@ contract Interface {
      function usersdipslay()public view returns(address[] memory) {
          return registeredUsers;
      }
+     function userdetails(address _user)public view returns(string memory name, string memory email) {
+         name = Users[_user].name;
+         email = Users[_user].email;
+     }
 }

@@ -65,7 +65,7 @@ App = {
 
         });
         App.contracts.Interface.deployed().then(function(instance){
-            return instance.Users(App.accounts);
+            return instance.userdetails(App.accounts);
         }).then(function(user){
             console.log(user);
             $("#semail").html(user[1] );
