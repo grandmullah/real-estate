@@ -65,7 +65,7 @@ App = {
 
         });
         App.contracts.Interface.deployed().then(function(instance){
-            return instance.Users(0x32Cd37A01a6286058507D1F018C8cB8676A90aaF);
+            return instance.Users(App.accounts);
         }).then(function(user){
             console.log(user);
             $("#semail").html(user[1] );
