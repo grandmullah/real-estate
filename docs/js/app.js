@@ -142,7 +142,7 @@ App = {
             $("#cpassword").effect("shake");
         }else {
         App.contracts.Interface.deployed().then(function(instance){
-            return instance.register(Ethadd, Password, Email, Name, {
+            return instance.register.send(Ethadd, Password, Email, Name, {
                 from: App.accounts,
                 gas: 500000
             });
