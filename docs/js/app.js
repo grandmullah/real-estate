@@ -134,9 +134,9 @@ App = {
         if (!Name.match(namereg)) {
           //  $("#name").closest(".form-control").addClass("has-error");
             $("#name").effect("shake");
-        }else if(!issaaddress) {
-            $("#ethadd").effect("shake");
-        }else if(!Password.match(passEx)){
+//         }else if(!issaaddress) {
+//             $("#ethadd").effect("shake");
+         }else if(!Password.match(passEx)){
             $("#password").effect("shake");
         } else if (!Password.match(cpassword)) {
             $("#cpassword").effect("shake");
