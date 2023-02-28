@@ -16,6 +16,6 @@
     "license": "ISC",
     "repository": "github:grandmullah/ERC-20-TOKEN-SMART-CONTRACTS",
     "devDependencies": {
-        "lite-server": "^2.4.0"
+        "lite-server": "^2.6.1"
     }
 }
